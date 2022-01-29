@@ -1,0 +1,18 @@
+char int float if
+\\ palavras reservadas
+then else while goto
+read print return
+
+- , ; : ( ) [] { }
+\* caracteres
+especiais *\
++ * / < > =
+
+<= >= == !=
+charint thenelse ident
+-a - _ _bcd -a_bcdef_gh-ij
+123 4 56789 'a' ''' 'b' '5'
+"abcdefg" "abcdef"g"hijkl"
+
+"zxy
+abc" 'k
