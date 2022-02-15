@@ -1,0 +1,5 @@
+make --dry-run --keep-going --print-directory
+make: Entering directory '/home/willrei/compiladores/trab/etapa2'
+make: 'etapa2' is up to date.
+make: Leaving directory '/home/willrei/compiladores/trab/etapa2'
+ 

@@ -1,0 +1,53 @@
+\* ----------------------------------------------------------------------------------------------- *
+ * INF01147 - Compiladores - 2021/2
+ * Etapa 2 do Trabalho
+ * 134090 - Willian Reichert
+ * ---------------------------------------------------------------------------------------------- *\
+
+int var: 'g';
+int emptyfunc()
+char retfunc(float toreturn) return (3+2)*7 >= highvalue
+float firstarray[15]: 'a' 1 'b' 2 'c' 3;
+
+char anothervar: 67;
+char noinitarray[4];
+int othervar: 89/5;
+char weirdfunc(int param) { ; }
+
+int loremipsum(char ipsumvar)
+{
+    print "Lorem ipsum dolor sit amet.\n";
+    print "Condimentum ", ipsumvar, " mattis pellentesque.";
+}
+
+float floatfunc(char cparam, float fparam, int iparam)
+{
+    firstlabel:
+    { ;;; };
+    if (true != 1) then { fluxlabel: goto firstlabel; };
+    return (((something) * 0));
+}
+float onemorevar[6];
+int array[10]: 50 7;
+
+float printfunc(char toprint) { print toprint; }
+int attribfunc(int toattrib) toreceive = toattrib
+float arrayattribfunc()
+{
+    intarray[index+1000] = junk;
+    return junk;
+}
+
+\\ i'm being ignored...
+int fluxtest()
+{
+    if (1 == 1) then { ; };
+    if (1 != 1) then print "it's false!" else print "it's not false!";
+    confusion:
+    if (1 <= (5 * 'a' + 1) + randnum(seed)) then
+    {
+        if false then { ; } else {
+            {{ ;goto confusion; };};
+        };
+    } else { return read; };
+}
