@@ -58,13 +58,17 @@ program: declist;
 declist: dec declist
     | /* vazio */;
 
-dec: decdatatype TK_IDENTIFIER dectype;
+dec: nfloatdecdatatype TK_IDENTIFIER nfloatdectype
+    | KW_FLOAT TK_IDENTIFIER floatdectype;
 
-decdatatype: KW_CHAR
-    | KW_INT
-    | KW_FLOAT;
+nfloatdecdatatype: KW_CHAR
+    | KW_INT;
 
-dectype: vardec
+nfloatdectype: vardec
+    | arraydec
+    | funcdec;
+
+floatdectype: ':' LIT_INTEGER '/' LIT_INTEGER ';'
     | arraydec
     | funcdec;
 
@@ -75,8 +79,7 @@ dectype: vardec
 vardec: ':' varlit ';'
 
 varlit: LIT_INTEGER
-    | LIT_CHAR
-    | LIT_INTEGER '/' LIT_INTEGER;
+    | LIT_CHAR;
 
 arraydec: '[' LIT_INTEGER ']' arrayinit ';'
 
@@ -111,12 +114,13 @@ paramdatatype: KW_CHAR
 /* blocos de comandos -------------------------------------------------------------------------------
  * > comandos devem ser terminados por ponto e vírgula.
  * > rótulos (comandos especiais) devem ser terminados por dois pontos.
- * > a lista de comandos não pode ser vazia, mas pode possuir comandos vazios que são terminados por
+ * > a lista de comandos pode ser vazia e pode possuir comandos vazios que são terminados por
  *   ponto e vírgula, de acordo com a regra de separação de comandos da lista. */
 
 cmdblock: '{' cmdlist '}';
 
-cmdlist: cmdlistitem cmdlisttail;
+cmdlist: cmdlistitem cmdlisttail
+    | /* vazio */;
 
 cmdlisttail: cmdlistitem cmdlisttail
     | /* vazio */;

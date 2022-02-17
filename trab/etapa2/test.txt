@@ -6,13 +6,14 @@
 
 int var: 'g';
 int emptyfunc()
+float afloat: 10/3;
 char retfunc(float toreturn) return (3+2)*7 >= highvalue
 float firstarray[15]: 'a' 1 'b' 2 'c' 3;
 
 char anothervar: 67;
 char noinitarray[4];
-int othervar: 89/5;
-char weirdfunc(int param) { ; }
+float othervar: 89/5;
+char weirdfunc(int param) { }
 
 int loremipsum(char ipsumvar)
 {
